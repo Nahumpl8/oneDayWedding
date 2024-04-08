@@ -1,0 +1,1180 @@
+@font-face {
+    font-family: titlesWedding;
+    src: url(../fonts/Vogue.ttf);
+
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/Outfit.ttf);
+}
+@font-face {
+    font-family: cinzel;
+    src: url(../fonts/Cinzel.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway.ttf);
+}
+@font-face {
+    font-family: Autography;
+    src: url(../fonts/Autography.otf);
+}
+@font-face {
+    font-family: Signature;
+    src: url(../fonts/Signature.ttf);
+}
+@font-face {
+    font-family: Vogue;
+    src: url(../fonts/Vogue.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f8f8f8;
+}
+.navbar{
+    position: fixed;
+    z-index: 5;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.desktop_menu{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desktop_scroll{
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #f8f8f8d6;
+    color: #607660;
+}
+ul{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+.desktop_menu li{
+    list-style: none;
+}
+.desktop_menu a{
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: Outfit, sans-serif;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 50px;
+    transition: all ease .5s;
+    color: #f8f8f8;
+    display: flex;
+}
+.desktop_menu a:hover{
+    color: #607660;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.desktop_scroll a{
+    color: #607660;
+}
+.desktop_scroll a:hover{
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(96, 118, 96);
+    color: #f8f8f8;
+}
+ul img{
+    width: 5%;
+    scale: 1.8;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: Outfit, sans-serif;
+}
+
+
+
+/*slider album*/
+
+.slider_album{
+    width: 100%;
+    position: relative;
+}
+/*.slider_album::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); 
+    z-index: 3; 
+}*/
+.slider_album img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    filter: brightness(60%);
+}
+.slider-container{
+    overflow: hidden;
+    display: flex;
+    width: 100vw;
+    height: 90vh;
+
+}
+.slide{
+    width: 100%;
+    display: none;
+    
+}
+.slide img{
+    width: 100%;
+    object-fit: cover;
+    
+}
+.text_couple{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    z-index: 4;
+    
+}
+.text_couple h1{
+    font-size: 8rem;
+    font-family: titlesWedding, sans-serif;
+    color: #c0a080;
+    animation: showTitle;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+.text_couple h4{
+    font-size: 4rem;
+    font-family: titlesWedding, sans-serif;
+    color: #c0a080;
+    animation: showTitle;
+    animation-duration: 2.5s;
+    animation-iteration-count: 1;
+}
+.phone_menu{
+    display: none;
+}
+
+@keyframes showSlide {
+    from{
+        opacity: .9;
+        
+    }
+    to{
+        opacity: 1.6;
+    }
+}
+@keyframes showTitle {
+    from{
+        scale: .8;
+        opacity: 0;
+        
+    }
+    to{
+        scale: 1;
+        opacity: 1.6;
+    }
+}
+@keyframes showTitle2 {
+    from{
+        scale: .8;
+        opacity: 0;
+        
+    }
+    to{
+        scale: 1;
+        opacity: 1.6;
+    }
+}
+
+
+/***TIME LEFT***/
+.time_left{
+    margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.time_left h2{
+    font-family: Signature, sans-serif;
+    font-size: 4rem;
+    color: rgb(96, 118, 96);
+    animation: showTitle2 2s;
+}
+.time{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 100px;
+    text-align: center;
+}
+.time div{
+    color: #c0a080;
+    font-size: 2.4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1s, transform 1.5s;
+}
+.time div.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.number_time{
+    font-size:5rem; 
+    font-family: 'titlesWedding', sans-serif; 
+    font-weight:500;
+}
+
+
+
+/***NUESTRA HISTORIA***/
+.litte_story{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 20px;
+    gap: 20px;
+    position: relative;
+}
+
+.text_story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgb(96, 118, 96);
+    margin: 50px 0;
+    text-align: justify;
+    padding: 0 15px;
+}
+
+.text_story h2{
+    color: #607660;
+    font-size: 4rem;
+    font-family: Signature, sans-serif;
+}
+.text_story p{
+    font-family: Outfit, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+.text_story img{
+    width: 100%;
+    border-radius: 20px;
+}
+.image_story{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #607660;
+}
+.photo_walking{
+    width: 100%;
+}
+.photo_walking img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+/****TICKER******/
+
+.ticker {
+    font-size: 24px;
+    overflow: hidden;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    position:relative;
+    height:1.5em;
+    font-weight: 600;
+    padding: 30px 0;
+}
+
+.ticker-title {
+    color: #c0a080;
+    text-transform: uppercase;
+    display:flex;
+    position:absolute;
+    top:5px;
+}
+
+.ticker-title span {
+    display: block;
+    margin-right:50px;
+}
+
+/*DETAILS INTRODUCTION SECTION*/
+.important_details{
+    display: grid;   
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    padding-right: 0;
+    margin-top: 50px;
+}
+.text_details{
+    font-family: Signature, sans-serif;
+    font-size: 2.4rem;
+    color: #607660;
+    position: relative;
+    z-index: 100;
+    padding: 40px 0;
+
+}
+.text_details::after{
+    content: '19·OCTUBRE·2024';
+    position: absolute;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    left: 0;
+    top: 15%;
+    font-size: 8rem;
+    color: rgba(192, 160, 128, 0.7);
+}
+.img_details img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+    height: 350px;
+}
+.img_details{
+    position: relative;
+}
+.img_details::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 20px 0px 0px 20px;
+}
+
+
+
+/******MAIN_INFO******/
+
+.main_info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    place-content: center;
+    padding: 40px;
+    gap: 20px;
+}
+.info_wedding{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f8f8f8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(40px);
+}
+.info_wedding:nth-child(1){
+    transition: opacity 1s, transform 1s;
+}
+.info_wedding:nth-child(2){
+    transition: opacity 1.5s, transform 1.5s;
+}
+.info_wedding:nth-child(3){
+    transition: opacity 2s, transform 1.5s;
+}
+.info_wedding:nth-child(4){
+    transition: opacity 1s, transform 1s;
+}
+.info_wedding:nth-child(5){
+    transition: opacity 1.5s, transform 1.5s;
+}
+.info_wedding:nth-child(6){
+    transition: opacity 2s, transform 2s;
+}
+.info_wedding.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.text_info{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.info_img{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.info_img img{
+    width: 50%;
+}
+.info_wedding h2{
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #c0a080;
+    font-size: 3.2rem;
+    font-weight: 500;
+}
+.info_wedding p{
+    font-size: 1.6rem;
+    color: #607660;
+    font-family: Outfit, sans-serif;
+    font-weight: 300;
+    text-align: justify;
+    padding: 20px 0;
+}
+.info_wedding a{
+    color: #607660;
+    text-align: end;
+}
+.anchor{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+}
+.anchor a{
+    padding: 10px 15px;
+    background-color: #607660;
+    color: #f8f8f8;
+    border-radius: 10px;
+    font-family: Outfit, sans-serif;
+    font-size: 1.6rem;
+    transition: background .7s, color 400ms;
+    font-weight: 600;
+    border: 1px solid transparent;
+    box-shadow: 0 0 10px transparent;
+}
+.anchor a:hover{
+    background-color: #f8f8f8;
+    color: rgb(96, 118, 96);
+    border: 1px solid #607660;
+    box-shadow: 0 0 10px rgba(96, 118, 96, 0.5)
+}
+
+/*RSVP SECTION*/
+
+.enter-rvsp{
+    width: 100vw;
+    padding: 50px 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.info-enter-rsvp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.info-enter-rsvp h2{
+    font-size: 4rem;
+    color: #c0a080;
+    font-family: titlesWedding, sans-serif;
+}
+.info-enter-rsvp p{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #607660;
+    width: 80%;
+    font-family: Raleway, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+
+
+.form-home{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-home form{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#nombre,
+#numInvitados {
+    border: none;
+    border-bottom: 1px solid #c0a080;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(96, 118, 96);
+    font-size: 1.8rem;
+    transition: border-bottom 0.3s, color 0.3s; 
+    width: 270px;
+    margin-top: 10px;
+    border-radius: 0%;
+}
+#nombre::placeholder,
+#numInvitados::placeholder, #asistencia::placeholder {
+    font-size: 18px;
+}
+
+#nombre:focus,
+#numInvitados:focus {
+    border: none !important;
+    border-bottom: 2px solid #c0a080;
+    background-color: transparent; 
+    color: rgb(96, 118, 96); 
+}
+#nombre:active,
+#numInvitados:active {
+    border: none !important;
+    background-color: transparent; 
+    color: rgb(96, 118, 96); 
+}
+
+
+#nombre::-webkit-input-placeholder,
+#numInvitados::-webkit-input-placeholder {
+    border: none;
+    color: rgba(96, 118, 96, 0.4);
+}
+
+#nombre::-moz-placeholder, #numInvitados::-moz-placeholder {
+    border: none;
+    color: rgba(96, 118, 96, 0.4);
+}
+
+#asistencia{
+    border: none;
+    border-bottom: 1px solid #c0a080;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(96, 118, 96);
+    font-size: 1.8rem;
+    transition: border-bottom 0.3s, color 0.3s; 
+    width: 270px;
+    margin-top: 10px;
+}
+
+#btn-submit{
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c0a080;
+    color: #f5f5f5;
+    padding: 10px 15px;
+    font-family: Outfit, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.awesomplete ul{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0px;
+    background-color: #f5f5f5cd;
+    border: 2px solid #c0a080;
+    width: 270px;
+    border-radius: 0 0 5px 5px;
+    font-family: Georgia, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+}
+.awesomplete ul li{
+    width: 100%;
+    list-style: none;
+    padding: 10px 0px;
+    color: rgb(96, 118, 96);
+    cursor: pointer;
+    border-bottom: 1px solid #c0a080;
+    font-size: 1.6rem;
+    text-align: center;
+    transition: .8s;
+}
+.awesomplete ul li:hover{
+    background-color: #c0a080;
+    color: #f5f5f5;
+}
+.awesomplete ul[hidden] {
+    display: none !important;
+}
+
+.awesomplete ul li[aria-selected="true"] {
+    background-color: transparent !important;
+}
+
+mark{
+    background-color: transparent;
+    color: #1d291d;
+}
+
+#confirmacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #c0a080;
+    font-family: Outfit, sans-serif;
+    padding: 20px 0;
+}
+
+#confirmacion p{
+    padding: 20px 0;
+    font-size: 4.2rem;
+    text-align: center;
+    color: #c0a080;
+    font-family: Signature, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#otraConfirmacion{
+    margin-top: 30px;
+    border: 2px solid #c0a080;
+    border-radius: 5px;
+    background-color: #f8f8f8;
+    color: #c0a080;
+    padding: 10px 15px;
+    font-family: Outfit, 'Times New Roman', Times, serif;
+    box-shadow: 0 0 5px rgba(192, 160, 128, 0.5);
+    font-size: 1.6rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+
+
+.img-rsvp{
+    width: 100%;
+    position: relative;
+}
+.img-rsvp::after{
+    position: absolute;
+    content: 'Love isn’t something you find. Love is something that finds you. – Loretta Young';
+    color: #f5f5f5;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-size: 1.6rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -50%);
+}
+.img-rsvp img{
+    width: 100%;
+    filter: brightness(50%);
+    border-radius: 0px 10px 10px 0px;
+}
+
+
+/*PREGUNTAS Y RESPUESTAS*/
+
+.frequent-qa {
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 50px 0;
+}
+.frequent-qa h2{
+    font-family: Signature, sans-serif;
+    font-size: 4rem;
+    color: #607660;
+    text-align: center;
+    padding: 2rem;
+}
+
+.questions {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; 
+}
+
+.qa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    min-width: 40%;
+    height: auto;
+    scroll-snap-align: center;
+    box-shadow: 0 0 10px rgba(96, 118, 96, 0.5);
+    border-radius: 10px;
+    scroll-behavior: smooth;
+    margin: 10px;
+    padding: 25px 40px;
+}
+.question-title{
+    font-size: 2.4rem;
+    color: #c0a080;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+}
+.question-answer{
+    color: #607660;
+    font-size: 1.6rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+}
+.question-answer a{
+    color: #607660;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/*FOOTER PRINCIPAL*/
+.final-section{
+    background-color: #415c41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    padding: 50px 20px;
+}
+.footer-info{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.email-contact{
+    flex: 1;
+}
+input::placeholder, textarea::placeholder{
+    font-weight: 200;
+    font-size: 1.4rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic; 
+    color: rgb(96, 118, 96, .4);
+}
+
+.email-contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.email-contact label{
+    display: none;
+}
+.email-contact input{
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+    height: 30px;
+    box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);;
+} 
+.email-contact textarea{
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 60%;
+    height: 100px;
+    border: none;
+    box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);
+} 
+#nombre-email, #correo, #asunto, #mensaje{
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+    color: #607660;
+}
+.footer-info h2{
+    font-size: 2.4rem;
+    font-family: Outfit, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f8f8f8;
+    font-weight: 400;
+}
+.footer-info h1{
+    font-size: 6.4rem;
+    font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #c0a080;
+    font-weight: 200;
+}
+.footer-info h3{
+    font-size: 3.6rem;
+    font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f8f8f8;
+}
+.footer-text-phone{
+    display: none;
+}
+#btn-email{
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #c0a080;
+    color: #f8f8f8;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: all ease-in-out 400ms;
+    box-shadow: 0 0 10px transparent;
+}
+#btn-another-email{
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #c0a080;
+    color: #f8f8f8;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: all ease-in-out 400ms;
+    box-shadow: 0 0 10px transparent;
+}
+
+
+@media screen and (max-width: 690px) {
+    .desktop_menu{
+        display: none;
+    }
+    .navbar{
+        border-radius: none;
+        
+    }
+    .phone_menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0 0 20px 20px;
+        z-index: 10000;
+    }
+    .logo_phone img{
+        width: 20%;
+        scale: 1.2;
+        animation: none;
+    }
+    .menu_p img{
+        width: 80%;
+    }
+    .nav_phone_menu {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        z-index: 10000;
+    }
+    .nav_phone_menu li {
+        padding: 15px;
+        text-align: center;
+        list-style: none;
+    }
+    .slide{
+        animation: none;
+    }
+      
+    .nav_phone_menu a {
+        color: #c0a080;
+        text-decoration: none;
+        opacity: 0; 
+        animation: showMenuOptions 1s ease forwards; 
+    }
+    
+    @keyframes showMenuOptions {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .nav_phone_menu a:nth-child(1) {
+        animation-delay: .5s;
+    }
+    
+    .nav_phone_menu a:nth-child(2) {
+        animation-delay: .8s;
+    }
+    .nav_phone_menu a:nth-child(3) {
+        animation-delay: 1.8s;
+    }
+    .nav_phone_menu a:nth-child(4) {
+        animation-delay: 2.2s;
+    }
+    .nav_phone_menu a:nth-child(5) {
+        animation-delay: 2.5s;
+    }
+    .nav_phone_menu a:nth-child(6) {
+        animation-delay: 2.8s;
+    }
+    .navbar.show{
+        background-color: #f8f8f8;
+        border-radius: 0;
+    }
+    .nav_phone_menu.show {
+        display: block;
+        animation: showMenu 1.2s ease-in-out forwards;
+    }
+    .phone_scroll{
+        width: 100%;
+        background-color: #f8f8f8;
+        color: #607660;
+        height: 20%;
+    }
+    .logo-btn{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    @keyframes showMenu {
+        from{
+            height: 0;
+        }
+        to{
+            height: 325px;
+        }
+    }
+    .menu_p{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .main_info{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        padding: 10px;
+        gap: 20px;
+    }
+    
+    .text_couple h1{
+        font-size: 4rem;
+    }
+    .text_couple h4{
+        font-size: 2rem;
+    }
+
+    .time_left{
+        margin: 50px 0;
+        padding: 0;
+    }
+    .time_left h2{
+        font-size: 3rem;
+        padding: 30px 0;
+    }
+    .time{
+        padding: 0px;
+        column-gap: 35px;
+        row-gap: 30px;
+    }
+    .time span:first-child{
+        font-size: 5rem;
+    }
+    .time span:last-child{
+        font-size: 1.6rem;
+    }
+    .no_phone_img{
+        display: none;
+    }
+    .litte_story{
+        display: grid;
+        grid-template-columns: 1fr;
+        max-height: 800px;
+    }
+    .litte_story h2{
+        color: #607660;
+        font-size: 3rem;
+    }
+    .text_story p{
+        font-size: 1.8rem;
+        margin: 30px 0;
+    }
+    .text_story img{
+        margin-top: 20px;
+    }
+
+
+
+    /****DETAILS*****/
+    .text_details{
+        font-family: Signature, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.6rem;
+        color: #607660;
+        position: relative;
+        z-index: 1;
+    }
+    
+    .text_details::after{
+        left: 0;
+        top: 25%;
+        font-size: 4rem;
+        color: #c0a0809c;
+    }
+    .img_details{
+        position: relative;
+    }
+    .img_details img{
+        width: 100%;
+        display: block;
+        object-fit: cover;
+        height: 280px;
+        border-radius: 20px 0px 0px 20px;
+        z-index: -1;
+    }
+    .img_details::before{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-color: #00000078;
+        border-radius: 20px 0px 0px 20px;
+    }
+    .anchor a:hover{
+        background-color: #607660;
+        color: #f8f8f8;
+        transition: none;
+        box-shadow: none;
+    }
+    .btn-enter-rsvp{
+        padding: 10px 25px;
+        font-size: 1.6rem;
+        
+    }
+    .info-enter-rsvp p{
+        width: 80%;
+        padding: 30px 0;
+    }
+    .info_wedding{
+        transition: opacity 1s, transform 1.5s;
+    }
+    .enter-rvsp{
+        grid-template-columns: 1fr;
+    }
+    .img-rsvp::after{
+        display: none;
+    }
+    .img-rsvp img{
+        display: none;
+    }
+    .frequent-qa h2{
+        font-size: 3rem;
+        margin: 20px 0;
+    }
+    .qa{
+        min-width: 80%;
+        padding: 25px 30px;
+    }
+
+    .final-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+    .footer-text-web{
+        display: none;
+    }
+    .footer-text-phone{
+        display: block;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f8f8f8;
+        padding: 15px 0px;
+    }
+    .footer-info{
+        margin-top: 45px;
+        align-items: center;
+    }
+    .footer-info h2{
+        font-size: 1.8rem;
+        font-family: Outfit, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f8f8f8;
+        font-weight: 200;
+    }
+    .footer-info h1{
+        font-size: 3.2rem;
+        font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #c0a080;
+        font-weight: 200;
+        text-align: center;
+    }
+    .footer-info h3{
+        font-size: 2.4rem;
+        font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #f8f8f8;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .email-contact input{
+        padding: 0px 10px;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        height: 30px;
+        box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);;
+    } 
+    .email-contact textarea{
+        padding: 10px 10px;
+        border-radius: 10px;
+        width: 100%;
+        height: 150px;
+        border: none;
+        box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);
+    } 
+    
+}
+
+@media screen and (max-width : 798px){
+    .enter-rvsp{
+        grid-template-columns: 1fr;
+    }
+    .img-rsvp::after{
+        display: none;
+    }
+    .img-rsvp img{
+        display: none;
+    }
+    
+}

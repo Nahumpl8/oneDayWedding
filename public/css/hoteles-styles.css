@@ -1,0 +1,741 @@
+@font-face {
+    font-family: titlesWedding;
+    src: url(../fonts/Vogue.ttf);
+
+}
+@font-face {
+    font-family: cinzel;
+    src: url(../fonts/Cinzel.ttf);
+
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/Outfit.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway.ttf);
+}
+@font-face {
+    font-family: Autography;
+    src: url(../fonts/Autography.otf);
+}
+@font-face {
+    font-family: Signature;
+    src: url(../fonts/Signature.ttf);
+}
+@font-face {
+    font-family: Vogue;
+    src: url(../fonts/Vogue.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f8f8f8;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desktop_menu{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desktop_scroll{
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #f8f8f8d6;
+    color: #607660;
+}
+ul{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+.desktop_menu li{
+    list-style: none;
+}
+.desktop_menu a{
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: Outfit, sans-serif;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 50px;
+    transition: all ease .5s;
+    color: #f8f8f8;
+}
+
+.desktop_menu a:hover{
+    color: #c0a080;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.desktop_scroll a{
+    color: #607660;
+}
+.desktop_scroll a:hover{
+    width: 70%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(96, 118, 96);
+    color: #f8f8f8;
+}
+ul img{
+    width: 5%;
+    scale: 1.8;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: Outfit, sans-serif;
+}
+.phone_menu{
+    display: none;
+}
+
+.dress-code{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 100px 0;
+    padding: 0px 20px;
+    gap: 10px;
+
+}
+.dress-code-title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 150px;
+}
+.dress-code-title h2{
+    font-size: 5.2rem;
+    font-family: titlesWedding, sans-serif;
+    text-align: center;
+    background:linear-gradient(to right top, #000000, #1f1f1f, #373737, #525252, #6e6e6e);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+.dress-code-day{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+.dress-code-day h3{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: Signature, sans-serif;
+}
+.dress-code-day h4{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: Signature, sans-serif;
+}
+.dress-code-day h2{
+    font-size: 2.4rem;
+    font-family: titlesWedding, sans-serif;
+    color: #c0a080;
+}
+.dress-code-day p{
+    font-size: 1.8rem;
+    font-family: Outfit, sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    color: #607660;
+    text-decoration: underline;
+}
+.info-day p{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.dress-code-day-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100px;
+}
+.dress-code-day-img img{
+    width: 80%;
+    border-radius: 100px;
+    transition: all ease .5s;
+}
+
+/*Introduction program*/
+.introduction-program{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background-image-program{
+    width: 100vw;
+    position: relative;
+}
+.background-image-program img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+.introduction-program-content{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    text-align: start;
+    color: #f8f8f8;
+}
+.introduction-program-content h1{
+    font-size: 7.2rem;
+    font-family: titlesWedding, sans-serif;
+    margin: 10px 0;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.introduction-program-content p{
+    width: 60%;
+    font-size: 2rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.introduction_hotels{
+    width: 100vw;
+    height: 100%;
+    background-color: #f8f8f8;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    place-items: center;
+    padding: 40px 0;
+}
+.introduction_hotels h2{
+    font-size: 4.2rem;
+    font-family: titlesWedding, sans-serif;
+    background:linear-gradient(to right top, #000000, #1f1f1f, #373737, #525252, #6e6e6e);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 40%;
+    padding: 40px 0;
+    line-height: 50px;
+}
+.introduction_hotels h3{
+    font-size: 2.4rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif sans-serif;
+    color: #607660;
+    text-align: start;
+    font-weight: 600;
+}
+.introduction_hotels p{
+    font-size: 1.4rem;
+    font-family: Outfit, sans-serif;
+    color: black;
+    text-align: start;
+    margin-top: 15px;
+    font-weight: 200;
+
+}
+.title_and_text{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 80px 0;
+}
+.title_and_text h2{
+    font-size: 3rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f8f8f8;
+    margin-top: 40px;
+    padding: 0px 20px;
+}
+
+.slider_hoteles{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+    background-color: #f8f8f8;
+    padding: 40px;
+}
+.info_logo_bed{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+.info_logo_bed h3{
+    font-size: 2rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #607660;
+    padding: 20px;
+}
+.info_logo_bed img{
+    width: 30%;
+}
+.card_hotel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    box-shadow: 0px 0px 15px #6e7c6e;
+    border-radius: 10px;
+    opacity: 0;
+    transform: translateY(60px);
+    transition: opacity 1s, transform 1s;
+}
+
+.card_hotel.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+.image_hotel{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px 10px 0 0;
+}
+.image_hotel img{
+    width: 100%;
+    height: 200px;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+    position: relative;
+}
+
+.image_hotel:hover img {
+    transform: scale(1.2); 
+    transition: transform 0.3s ease; 
+}
+.info_hotel{
+    width: 100%;
+    padding: 5px 10px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+.info_hotel h3{
+    color: #c0a080;
+    font-size: 2.4rem;
+    font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 600;
+
+}
+.info_hotel h4{
+    color: #415c41;
+    font-size: 1.6rem;
+    font-weight: 300;
+    width: 70%;
+    margin: 10px 0;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.link{
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    width: 100%;
+    padding: 15px 10px;
+}
+.link a{
+    padding: 10px 20px;
+    background-color: #607660;
+    color: #f8f8f8;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/*FOOTER PRINCIPAL*/
+.final-section{
+    background-color: #415c41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    padding: 50px 20px;
+}
+.footer-info{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.email-contact{
+    flex: 1;
+}
+input::placeholder, textarea::placeholder{
+    font-weight: 200;
+    font-size: 1.4rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic; 
+    color: rgb(96, 118, 96, .4);
+}
+
+.email-contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.email-contact label{
+    display: none;
+}
+.email-contact input{
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+    height: 30px;
+    box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);;
+} 
+.email-contact textarea{
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 60%;
+    height: 100px;
+    border: none;
+    box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);
+} 
+input, textarea{
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+    color: #607660;
+}
+.footer-info h2{
+    font-size: 2.4rem;
+    font-family: Outfit, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f8f8f8;
+    font-weight: 400;
+}
+.footer-info h1{
+    font-size: 6.4rem;
+    font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #c0a080;
+    font-weight: 200;
+}
+.footer-info h3{
+    font-size: 3.6rem;
+    font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f8f8f8;
+}
+.footer-text-phone{
+    display: none;
+}
+#btn-email{
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #c0a080;
+    color: #f8f8f8;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: all ease-in-out 400ms;
+    box-shadow: 0 0 10px transparent;
+}
+#btn-another-email{
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #c0a080;
+    color: #f8f8f8;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: all ease-in-out 400ms;
+    box-shadow: 0 0 10px transparent;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+    .desktop_menu{
+        display: none;
+    }
+    .navbar{
+        border-radius: none;
+        
+    }
+    .phone_menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0 0 20px 20px;
+    }
+    .logo_phone img{
+        width: 20%;
+        scale: 1.2;
+        animation: none;
+    }
+    .menu_p img{
+        width: 80%;
+    }
+    .nav_phone_menu {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        z-index: 1000;
+    }
+    .nav_phone_menu li {
+        padding: 15px 0;
+        text-align: center;
+        list-style: none;
+    }
+      
+    .nav_phone_menu a {
+        color: #c0a080;
+        text-decoration: none;
+        opacity: 0; 
+        animation: showMenuOptions 1s ease forwards; 
+    }
+    
+    @keyframes showMenuOptions {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .nav_phone_menu a:nth-child(1) {
+        animation-delay: .5s;
+    }
+    
+    .nav_phone_menu a:nth-child(2) {
+        animation-delay: .8s;
+    }
+    .nav_phone_menu a:nth-child(3) {
+        animation-delay: 1.8s;
+    }
+    .nav_phone_menu a:nth-child(4) {
+        animation-delay: 2.2s;
+    }
+    .navbar.show{
+        background-color: #f8f8f8;
+        border-radius: 0;
+        
+    }
+    .nav_phone_menu.show {
+        display: block;
+        animation: showMenu 1s ease forwards;
+    }
+    .phone_scroll{
+        width: 100%;
+        background-color: #f8f8f8;
+        color: #607660;
+        height: 20%;
+    }
+    .logo-btn{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    @keyframes showMenu {
+        from{
+            height: 0;
+        }
+        to{
+            height: 325px;
+        }
+    }
+    .menu_p{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+     /*Slider info*/
+     .introduction-program-content{
+        bottom: 15%;
+        left: 2%;
+        text-align: start;
+        color: #f8f8f8;
+    }
+    .introduction-program-content h1{
+        font-size: 4.2rem;
+        font-family: titlesWedding, sans-serif;
+    }
+    .introduction-program-content p{
+        width: 70%;
+        font-size: 1.4rem;
+        font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+    }
+    .btn-dress-code{
+        text-decoration: none;
+        padding: 5px 10px;
+        border-radius: 50px;
+        background-color: #f8f8f8;
+        color: #c0a080;
+        font-size: 1.6rem;
+        font-family: Outfit, sans-serif;
+        font-weight: 600;
+        border: 1px solid transparent;
+    }
+
+    /***HOTELES****/
+    .introduction_hotels h2{
+        font-size: 3.2rem;
+        padding: 40px 20px;
+        width: 60%;
+        line-height: 40px;
+
+    }
+    .slider_hoteles{
+        padding: 15px 10px;
+        grid-template-columns: 1fr;
+        gap: 20px 10px;
+    }
+    .info_hotel h2{
+        color: #607660;
+        font-size: 1.8rem;
+    }
+    .info_hotel p{
+        color: black;
+        font-size: 1.6rem;
+    }
+    .final-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .link{
+        margin-top: 10px;
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+    .footer-text-web{
+        display: none;
+    }
+    .footer-text-phone{
+        display: block;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f8f8f8;
+        padding: 15px 0px;
+    }
+    .footer-info{
+        margin-top: 45px;
+        align-items: center;
+    }
+    .footer-info h2{
+        font-size: 1.8rem;
+        font-family: Outfit, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f8f8f8;
+        font-weight: 200;
+    }
+    .footer-info h1{
+        font-size: 3.2rem;
+        font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #c0a080;
+        font-weight: 200;
+        text-align: center;
+    }
+    .footer-info h3{
+        font-size: 2.4rem;
+        font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #f8f8f8;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .email-contact input{
+        padding: 0px 10px;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        height: 30px;
+        box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);;
+    } 
+    .email-contact textarea{
+        padding: 10px 10px;
+        border-radius: 10px;
+        width: 100%;
+        height: 150px;
+        border: none;
+        box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);
+    } 
+}
+
+@media screen and (max-width: 490px) {
+    .introduction_hotels h2{
+        font-size: 2.4rem;
+        padding: 40px 20px;
+        width: 70%;
+        line-height: 40px;
+    }
+    .info_hotel h3{
+        font-size: 1.8rem;
+
+    }
+    .card_hotel{
+        gap: 10px;
+    }
+    .link{
+        margin-top: 20px;
+    }
+}

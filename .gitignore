@@ -1,0 +1,28 @@
+# Node modules
+node_modules/
+
+# Configuración de entorno local
+.env
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de logs
+logs
+*.log
+npm-debug.log*
+
+# Directorios y archivos temporales
+tmp
+temp
+*.tmp
+
+# Caché
+*.log
+*.status
+*.result
+.cache
+
+# Dependiendo del entorno de desarrollo y herramientas, podrías necesitar excluir más archivos o directorios.
+# Añade aquí cualquier otro patrón específico para tu proyecto.

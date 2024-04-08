@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>Datos de Invitados</title>
+    <link rel="stylesheet" href="/css/invitacion.css">
+</head>
+<body>
+
+    <section class="invitation_cn">
+        <div class="invitaciones">
+            <div class="pases">
+                <div class="sobre">
+                    <img src="/images/c.png" alt="">
+                </div>
+                <div class="pases_info desktop-rvsp">
+                    <h1>RSVP</h1>
+                    <p>Hay momentos en la vida que son mágicos por si solos, pero compartirlos con personas que amamos los hace inolvidables</p>
+                    <h2>Tu reservación está hecha para</h2>
+                    <h3><%= usuario.numeroInvitados %></h3>
+                    <% if(usuario.numeroInvitados > 1){ %>
+                        <h4>personas</h4>
+                    <% } else { %>
+                        <h4>persona</h4>
+                    <% } %>
+                    <h5>- SOLO ADULTOS -</h5>
+                    <h5 style="margin-top: 20px;">Más detalles en</h5>
+                    <a href="https://bodaclaudiaynahum.com">www.bodaclaudiaynahum.com</a>
+                </div>
+            </div>
+            <div class="info">
+                <div class="papel_grande">
+                    <div class="logo_cn">
+                        <img src="/images/goldLogo.png" alt="logo_boda">
+                    </div>
+                    <div class="invitados">
+                        <h2><%= usuario.nombre %></h2>
+                        <h6>¡NOS CASAMOS!</h6>
+                        <h1>CLAUDIA & NAHUM</h1>  
+                        <p> Con la bendición de Dios y en compañia de nuestros padres</p>
+                        <div class="parents-name">
+                            <div class="her-parents">
+                                <h3>Claudia Franco Ramírez</h3>
+                                <h3>Antonio del Valle González</h3>
+                            </div>
+                            <div class="him-parents">
+                                <h3>Consuelo López Cervantes</h3>
+                                <h3>Porfirio Jaime Pérez Ruiz</h3>
+                            </div>
+                        </div>
+                        <% if(usuario.weekend > 2){ %>
+                            <p>Tenemos el placer de compartir con ustedes nuestra boda, que se celebrará los días</p>
+                        <% } else { %>
+                            <p>Tenemos el placer de compartir con ustedes nuestra boda, que se celebrará el próximo</p>
+                        <% } %>
+                        <div class="datos_boda">
+                            <div class="date">
+                                <% if(usuario.weekend > 2){ %>
+                                    <h6>18 <br> <span style="font-size: 14px; font-family: cinzel, sans-serif;">al</span> <br> 20</h6>
+                                <% } else { %>
+                                    <h2>19</h2>
+                                <% } %>
+                                <div class="month-year">
+                                    <h3>Octubre</h3>
+                                    <h4>2024</h4>
+                                </div>
+                            </div>
+                            <div class="place">
+                                <h2>Hotel Galería Plaza San Jerónimo, CDMX</h2>
+                            </div>
+                        </div>
+                        <% if(usuario.numeroInvitados > 1){ %>
+                            <p>Su presencia durante este fin de semana sería un honor para nosotros</p>
+                        <% } else { %>
+                            <p>Tu presencia durante este fin de semana sería un honor para nosotros</p>
+                        <% } %>
+                        
+                        <span>MESA DE REGALOS</span>
+                        <a href="/">ZEPIKA</a>
+                
+                    </div>
+                </div>
+            </div>
+            <div class="pases-phone">
+                <div class="pases_info">
+                    <h1>RSVP</h1>
+                    <p>"Hay momentos en la vida que son mágicos por si solos, pero compartirlos con personas que amamos los hace inolvidables"</p>
+                    <h2>Tu reservación está hecha para</h2>
+                    <h3><%= usuario.numeroInvitados %></h3>
+                    <% if(usuario.numeroInvitados > 1){ %>
+                        <h4>personas</h4>
+                    <% } else { %>
+                        <h4>persona</h4>
+                    <% } %>
+                    <h5>- SOLO ADULTOS -</h5>
+                    <h5 style="margin-top: 20px;">Más detalles en</h5>
+                    <a href="https://claudiaynahum.com">www.claudiaynahum.com</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="stamp">
+        <img src="/images/envelope-cn.webp" alt="sello de la boda">
+    </div>
+    <div class="doors-open">
+        <div class="side-one">
+
+        </div>
+        <div class="side-two">
+
+        </div>
+    </div>
+</body>
+</html>

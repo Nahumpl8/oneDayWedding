@@ -1,0 +1,573 @@
+@font-face {
+    font-family: titlesWedding;
+    src: url(../fonts/Vogue.ttf);
+
+}
+@font-face {
+    font-family: cinzel;
+    src: url(../fonts/Cinzel.ttf);
+
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/Outfit.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway.ttf);
+}
+@font-face {
+    font-family: Autography;
+    src: url(../fonts/Autography.otf);
+}
+@font-face {
+    font-family: Signature;
+    src: url(../fonts/Signature.ttf);
+}
+@font-face {
+    font-family: Vogue;
+    src: url(../fonts/Vogue.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f8f8f8;
+}
+.navbar{
+    position: fixed;
+    z-index: 5;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.desktop_menu{
+    padding: 10px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.desktop_scroll{
+    width: 90%;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 50px;
+    background-color: #f8f8f8d6;
+    color: #607660;
+}
+ul{
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    
+}
+.desktop_menu li{
+    list-style: none;
+}
+.desktop_menu a{
+    list-style: none;
+    font-size: 1.8rem;
+    font-family: Outfit, sans-serif;
+    padding: 10px;
+    font-weight: 400;
+    border-radius: 50px;
+    transition: all ease .5s;
+    color: #f8f8f8;
+}
+
+.desktop_menu a:hover{
+    color: #c0a080;
+    background-color: #f8f8f8;
+    cursor: pointer;
+}
+.desktop_scroll a{
+    color: #607660;
+}
+.desktop_scroll a:hover{
+    width: 70%;
+    margin: 20px 0;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: rgb(96, 118, 96);
+    color: #f8f8f8;
+}
+ul img{
+    width: 5%;
+    scale: 1.8;
+}
+a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-family: Outfit, sans-serif;
+}
+.phone_menu{
+    display: none;
+}
+
+
+/*Introduction program*/
+.introduction-program{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background-image-program{
+    width: 100vw;
+    position: relative;
+}
+.background-image-program img{
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    object-position: 50% 65%;
+    filter: brightness(0.8);
+}
+.introduction-program-content{
+    position: absolute;
+    bottom: 12%;
+    left: 5%;
+    text-align: start;
+    color: #f8f8f8;
+}
+.introduction-program-content h1{
+    font-size: 8.4rem;
+    font-family: titlesWedding, sans-serif;
+    margin: 10px 0;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.introduction-program-content p{
+    width: 40%;
+    font-size: 2.4rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f8f8f8;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Schedule */
+
+.schedule{
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 50px 0;
+    padding: 0px 20px;
+    gap: 10px;
+}
+.schedule-title{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 150px;
+}
+.schedule-title h2{
+    font-size: 7.2rem;
+    font-family: titlesWedding, sans-serif;
+    text-align: center;
+    background:linear-gradient(to right top, #000000, #1f1f1f, #373737, #525252, #6e6e6e);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+    
+}
+
+
+.schedule-day{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+}
+.schedule-day h3{
+    margin-top: 10px;
+    font-size: 2rem;
+    font-family: Signature, sans-serif;
+}
+.schedule-day h2{
+    font-size: 2.4rem;
+    font-family: titlesWedding, sans-serif;
+    color: #c0a080;
+}
+.schedule-day p{
+    font-size: 1.8rem;
+    font-family: Outfit, sans-serif;
+    font-weight: 100;
+    cursor: pointer;
+    color: #607660;
+    text-decoration: underline;
+}
+.info-day p{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.schedule-day-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 100px;
+}
+.schedule-day-img img{
+    width: 100%;
+    height: 300px;
+    border-radius: 100px;
+    transition: all ease .5s;
+    object-fit: cover;
+}
+
+
+.info-of-day-1, .info-of-day-2, .info-of-day-3{
+    display: none;
+}
+.show-information{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 20px;
+    color: #607660;
+    font-family: 1.8rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/*FOOTER PRINCIPAL*/
+.final-section{
+    background-color: #415c41;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f5f5f5;
+    padding: 50px 20px;
+}
+.footer-info{
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.email-contact{
+    flex: 1;
+}
+input::placeholder, textarea::placeholder{
+    font-weight: 200;
+    font-size: 1.4rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic; 
+    color: rgb(96, 118, 96, .4);
+}
+
+.email-contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+.email-contact label{
+    display: none;
+}
+.email-contact input{
+    padding: 0px 10px;
+    border-radius: 10px;
+    border: none;
+    width: 60%;
+    height: 30px;
+    box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);;
+} 
+.email-contact textarea{
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 60%;
+    height: 100px;
+    border: none;
+    box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);
+} 
+input, textarea{
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.6rem;
+    color: #607660;
+}
+.footer-info h2{
+    font-size: 2.4rem;
+    font-family: Outfit, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f8f8f8;
+    font-weight: 400;
+}
+.footer-info h1{
+    font-size: 6.4rem;
+    font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #c0a080;
+    font-weight: 200;
+}
+.footer-info h3{
+    font-size: 3.6rem;
+    font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #f8f8f8;
+}
+.footer-text-phone{
+    display: none;
+}
+#btn-email{
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #c0a080;
+    color: #f8f8f8;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: all ease-in-out 400ms;
+    box-shadow: 0 0 10px transparent;
+}
+#btn-another-email{
+    padding: 10px 15px;
+    margin-top: 15px;
+    background-color: #c0a080;
+    color: #f8f8f8;
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
+    font-weight: 600;
+    border: 1px solid transparent;
+    transition: all ease-in-out 400ms;
+    box-shadow: 0 0 10px transparent;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 780px) {
+    .desktop_menu{
+        display: none;
+    }
+    .navbar{
+        border-radius: none;
+        
+    }
+    .phone_menu{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 0 0 20px 20px;
+    }
+    .logo_phone img{
+        width: 20%;
+        scale: 1.2;
+        animation: none;
+    }
+    .menu_p img{
+        width: 80%;
+    }
+    .nav_phone_menu {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        z-index: 1000;
+    }
+    .nav_phone_menu li {
+        padding: 15px;
+        text-align: center;
+        list-style: none;
+    }
+    .slide{
+        animation: none;
+    }
+      
+    .nav_phone_menu a {
+        color: #c0a080;
+        text-decoration: none;
+        opacity: 0; 
+        animation: showMenuOptions 1s ease forwards; 
+    }
+    
+    @keyframes showMenuOptions {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .nav_phone_menu a:nth-child(1) {
+        animation-delay: .5s;
+    }
+    
+    .nav_phone_menu a:nth-child(2) {
+        animation-delay: .8s;
+    }
+    .nav_phone_menu a:nth-child(3) {
+        animation-delay: 1.8s;
+    }
+    .nav_phone_menu a:nth-child(4) {
+        animation-delay: 2.2s;
+    }
+    .navbar.show{
+        background-color: #f8f8f8;
+        border-radius: 0;
+    }
+    .nav_phone_menu.show {
+        display: block;
+        animation: showMenu 1s ease forwards;
+    }
+    .phone_scroll{
+        width: 100%;
+        background-color: #f8f8f8;
+        color: #607660;
+        height: 20%;
+    }
+    .logo-btn{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    @keyframes showMenu {
+        from{
+            height: 0;
+        }
+        to{
+            height: 325px;
+        }
+    }
+    .menu_p{
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    /*Slider info*/
+    .introduction-program-content{
+        bottom: 12%;
+        left: 2%;
+        text-align: start;
+        color: #f8f8f8;
+    }
+    .introduction-program-content h1{
+        font-size: 4.2rem;
+        font-family: titlesWedding, sans-serif;
+    }
+    .introduction-program-content p{
+        width: 70%;
+        font-size: 1.4rem;
+        font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-weight: 300;
+    }
+
+
+    /*Schedule*/
+    .schedule{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin: 50px 0;
+        padding: 0px 20px;
+        gap: 20px;
+    }
+    .schedule-title{
+        margin: 20px 0;
+    }
+    .schedule-title h2{
+        font-size: 4rem;
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    }
+    .schedule-day-img img{
+        width: 100%;
+        border-radius: 100px;
+    }
+    .final-section{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer-info {
+        text-align: center;
+    }
+    .footer-text-web{
+        display: none;
+    }
+    .footer-text-phone{
+        display: block;
+        text-align: center;
+        font-size: 1.8rem;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f8f8f8;
+        padding: 15px 0px;
+    }
+    .footer-info{
+        margin-top: 45px;
+        align-items: center;
+    }
+    .footer-info h2{
+        font-size: 1.8rem;
+        font-family: Outfit, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #f8f8f8;
+        font-weight: 200;
+    }
+    .footer-info h1{
+        font-size: 3.2rem;
+        font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #c0a080;
+        font-weight: 200;
+        text-align: center;
+    }
+    .footer-info h3{
+        font-size: 2.4rem;
+        font-family: cinzel, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: #f8f8f8;
+        font-weight: 300;
+        text-align: center;
+    }
+
+    .email-contact input{
+        padding: 0px 10px;
+        border-radius: 10px;
+        border: none;
+        width: 100%;
+        height: 30px;
+        box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);;
+    } 
+    .email-contact textarea{
+        padding: 10px 10px;
+        border-radius: 10px;
+        width: 100%;
+        height: 150px;
+        border: none;
+        box-shadow: 2px 2px 3px rgb(248, 248, 248, 0.3);
+    } 
+}

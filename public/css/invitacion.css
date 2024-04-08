@@ -1,0 +1,548 @@
+@font-face {
+    font-family: 'Hertine';
+    src: url(../fonts/Hertine.ttf);
+}
+@font-face {
+    font-family: cinzel;
+    src: url(../fonts/Cinzel.ttf);
+}
+@font-face {
+    font-family: titlesWedding;
+    src: url(../fonts/Vogue.ttf);
+
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/Outfit.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway.ttf);
+}
+@font-face {
+    font-family: Autography;
+    src: url(../fonts/Autography.otf);
+}
+@font-face {
+    font-family: Signature;
+    src: url(../fonts/Signature.ttf);
+}
+@font-face {
+    font-family: Vogue;
+    src: url(../fonts/Vogue.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #f5f5f5;
+}
+.doors-open{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index:10;
+    pointer-events: none;
+}
+.side-one{
+    width: 50%;
+    height: 100%;
+    background-color: #A97F55;
+    animation: rightSideOpen 3s ease-in-out forwards;
+    animation-delay: .5s;
+}
+.side-two{
+    width: 50%;
+    height: 100%;
+    background-color: #A97F55;
+    animation: leftSideOpen 3s ease-in-out forwards;
+    animation-delay: .5s;
+}
+@keyframes leftSideOpen {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(50vw);
+        display: none;
+    }
+}
+@keyframes rightSideOpen {
+    0%{
+        transform: translate(0);
+    }
+    100%{
+        transform: translate(-50vw);
+        display: none;
+    }
+}
+
+
+.stamp{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    animation: opacityStamp 3s ease-in-out forwards;
+    pointer-events: none;
+}
+.stamp img{
+    width: 50%;
+}
+@keyframes opacityStamp {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+        display: none;
+    }
+}
+
+.invitaciones{
+    padding: 20px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 2%;
+    animation: showInvitations 4.5s ease-in-out forwards;
+}
+.pases{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: space-evenly;
+    
+}
+.sobre img{
+    width: 100%;
+    transform: scale(1.5) translateX(50px) translateY(50px);
+}
+
+
+.pases_info{
+    background-color: #dbdbdb;
+    width: 80%;
+    height: auto;
+    margin-right: 50px;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2); 
+    z-index: 1;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 10px;
+}
+.pases_info h1{
+    font-size: 3.2rem;
+    color: #A97F55;
+    font-family: titlesWedding, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+}
+.pases_info h2{
+    font-size: 2rem;
+    color: #607660;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+.pases_info h3{
+    font-size: 5.2rem;
+    color: #A97F55;
+    font-family: cinzel, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+.pases_info h4{
+    font-size: 2rem;
+    color: #607660;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+.pases_info p{
+    font-size: 1.6rem;
+    color: #607660;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    text-align: center;
+}
+.pases_info h5{
+    font-size: 1.6rem;
+    color: #607660;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    text-align: center;
+}
+.pases_info a{
+    font-size: 1.6rem;
+    color: #A97F55;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+
+.info{
+    display: flex;
+    align-items: end;
+    z-index: 1;
+}
+.papel_grande{
+    width: 90%;
+    height: 100%;
+    background-color: #dbdbdb;
+    box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+.logo_cn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.logo_cn img{
+    width: 15%;
+}
+
+.invitados{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    padding-top: 0;
+    gap: 20px;
+}
+.invitados h2{
+    font-size: 2rem;
+    color: rgb(96, 118, 96);
+    font-family: cinzel, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    margin: 20px 0;
+}
+.invitados h2:not(:first-child){
+    font-size: 1.8rem;
+}
+.invitados h1{
+    font-size: 5.2rem;
+    color: #A97F55;
+    font-family: cinzel, serif;
+    font-weight: 100;
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.invitados p{
+    font-size: 1.8rem;
+    color: rgb(96, 118, 96);
+    font-family: Outfit, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: 200;
+}
+.invitados span{
+    margin-top: 30px;
+    font-size: 1.8rem;
+    color: #A97F55;
+    font-family: Outfit, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: 200;
+}
+.invitados a{
+    font-size: 1.6rem;
+    color: #A97F55;
+    font-family: Outfit, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-weight: 500;
+    text-decoration: underline;
+}
+.pases_info_phone{
+    display: none;
+}
+.invitados h6{
+    font-size: 2rem;
+    color: #607660;
+    font-family: Outfit, serif;
+    font-weight: 300;
+    width: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+}
+.datos_boda{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+}
+.date{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border-right: 1px solid #607660;
+}
+.date h2{
+    font-size: 7.2rem;
+    color: #A97F55;
+    font-family: cinzel, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+    border-right: 1px solid #607660;
+}
+.date h6{
+    font-size: 3.2rem;
+    color: #A97F55;
+    font-family: cinzel, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    padding: 5px 30px;
+    border-right: 1px solid #607660;
+    line-height: 30px;
+}
+.month-year{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 5px;
+    padding: 5px 15px;
+}
+.month-year h3{
+    font-size: 2rem;
+    color: #A97F55;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+}
+
+.month-year h4{
+    font-size: 2.8rem;
+    color: #A97F55;
+    font-family: cinzel, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+}        
+.place{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+}
+.place h2{
+    font-size: 2.8rem;
+    color: #A97F55;
+    font-family: Outfit, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+.pases-phone{
+    display: none;
+}
+.parents-name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 10px;
+    margin: 20px 0;
+}
+.parents-name h3{
+    font-size: 1.6rem;
+    color: #607660;
+    font-family: cinzel, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+}
+.her-parents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.him-parents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+.get-out img{
+    width: 5%;
+}
+.menu-phone-special{
+    display: none;
+}
+
+@keyframes showInvitations {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+@media screen and (max-width: 720px) {
+    .desktop-rvsp{
+        display: none;
+    }
+    .invitaciones{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .sobre img{
+        width: 100%;
+        transform: none;
+    }
+    .info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .papel_grande{
+        width: 100%;
+        height: 100%;
+        transform: translateY(-100px);
+    }
+    .invitados h1{
+        font-size: 2.8rem;
+    }
+    .invitados h2{
+        margin: 0;
+    }
+    .pases-info h4{
+        font-size: 1.6rem;
+    }
+    .parents-name h3{
+        font-size: 1.6rem;
+    }
+    .date h2{
+        font-size: 5.2rem;
+        font-weight: 400;
+    }
+    .place h2{
+        font-size: 1.6rem;
+    }
+    .parents-name h3 {
+        font-size: 1.2rem;
+        color: #607660;
+        font-family: cinzel, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .stamp img{
+        width: 100%;
+    }
+    .pases-phone{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        transform: translateY(-60px);
+    }
+    .info-gifts{
+        height: 120px;
+    }
+    .info-gifts span{
+        font-size: 1.4rem;
+        width: 50%;
+    }
+    .info-schedule{
+        height: 120px;
+    }
+    .info-schedule span{
+        font-size: 1.4rem;
+    }
+    .pases_info{
+        width: 100%;
+        margin: 0;
+    }
+    .pases_info p{
+        font-size: 1.4rem;
+        padding: 0 20px;
+        font-style: italic;
+    }
+    .invitados a{
+        font-size: 1.4rem;
+    }
+    .less-info{
+        width: 50%;
+    }
+    .menu-phone{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 0;
+        background-color: #dbdbdb;
+        box-shadow: -5px 5px 5px rgba(0, 0, 0, 0.2);
+    }
+    .menu-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-item img{
+        width: 30px;
+    }
+    .menu-item p{
+        font-size: 1.2rem;
+        color: #A97F55;
+        font-family: Outfit, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 500;
+        text-align: center;
+    }
+}

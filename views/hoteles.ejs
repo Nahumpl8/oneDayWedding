@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>Claudia & Nahum</title>
+    <link rel="stylesheet" href="css/hoteles-styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <nav class="desktop_menu">
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/programa-dia">Programa</a></li>
+                <li><a href="/#section-rsvp">RSVP</a></li>
+                <img src="/images/wedding.png" alt="logo de la boda" class="principal_logo_desktop">
+                <li><a href="#">Hoteles</a></li>
+                <li><a href="/dress-code">Dress Code</a></li>
+                <li><a href="/login">Invitación</a></li>
+            </ul>
+        </nav>
+        <nav class="phone_menu">
+            <div class="logo_phone">
+                <a href="/" class="logo-btn">
+                    <img src="/images/goldLogo.png" alt="" class="principal_logo">
+                </a>
+            </div>
+            <div class="menu_p">
+                <img src="/images/ListGold.png" alt="" class="menu_icon">
+            </div>
+            <ul class="nav_phone_menu">
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/programa-dia">Programa</a></li>
+                <li><a href="/#section-rsvp">RSVP</a></li>
+                <li><a href="#">Hoteles</a></li>
+                <li><a href="/dress-code">Dress Code</a></li>
+                <li><a href="/login">Invitación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="introduction-program">
+        <div class="background-image-program">
+             <img src="/images/hotel-plaza.webp" alt="Foto de claudia y nahum">
+         </div>
+         <div class="introduction-program-content">
+             <h1>HOTELES</h1>
+             <p>Te dejamos el el tipo de vestimenta de la boda.</p>
+         </div>  
+     </section>
+
+    <div class="introduction_hotels">
+        <h2>Nuestras recomendaciones</h2>
+        <div class="slider_hoteles">
+            <div class="card_hotel">
+                <div class="image_hotel">
+                    <img src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/102112884.jpg?k=f89905838c392b522606bbadfa632e3a569ad19fea8c8b6bf2363f6da1d1221d&o=&hp=1" alt="">
+                </div>
+                <div class="info_hotel">
+                    <h3>Hotel Galería Plaza Reforma</h3>
+                    <h4>Si marcas a este hotel diciendo que es para nuestra boda te dan una mejor tarifa</h4>
+                    <p>A menos de 20 minutos</p> 
+                </div>
+                <div class="link">
+                    <a href="https://www.galeriaplazahotels.com.mx/es/reforma/" target="_blank">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card_hotel">
+                <div class="image_hotel">
+                    <img src="https://presidenteicmexico.com/wp-content/uploads/2021/10/hotel-lujoso-suite-diego-rivera-1.jpg" alt="presidente_hotel">
+                </div>
+                <div class="info_hotel">
+                    <h3>Hotel Presidente Intercontinental Polanco</h3>
+                    <h4>Si marcas a este hotel diciendo que es para nuestra boda te dan una mejor tarifa</h4>
+                    <p>A menos de 20 minutos</p> 
+                </div>
+                <div class="link">
+                    <a href="https://presidenteicmexico.com/" target="_blank">Visitar</a>
+                </div>
+            </div>
+
+            <div class="card_hotel">
+                <div class="image_hotel">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/29/14/7b/00/craer-fachada-nocturna.jpg" alt="camino real hotel">
+                </div>
+                <div class="info_hotel">
+                    <h3>Hotel Camino Real Aeropuerto</h3>
+                    <p>A menos de 20 minutos</p> 
+                </div>
+                <div class="link">
+                    <a href="https://www.caminoreal.com/en/caminoreal/camino-real-aeropuerto-mexico?sjrncid=GA_15303281443&sjrnaid=GA_594886059066&gad_source=1&gclid=Cj0KCQjwq86wBhDiARIsAJhuphlSb5-oXgLnmhigcAePLA6M_P43K4GnHuwEuZbPZ4CjmGu084vJyB8aAk8OEALw_wcB&gclsrc=aw.ds" target="_blank">Visitar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="final-section">
+        <div class="footer-info">
+            <h2 class="footer-text-web">Si tienes alguna duda, <br>no dudes en contactarnos.</h2>
+            <h1>CLAUDIA & NAHUM</h1>
+            <h3>19 · OCTUBRE · 2024</h3>
+        </div>
+        <div class="email-contact">
+            <h2 class="footer-text-phone">Si tienes alguna duda, <br>no dudes en contactarnos.</h2>
+            <form action="/send-email" method="POST">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre"><br>
+            
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@gmail.com" required><br>
+            
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto del correo" required><br>
+            
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje"  placeholder="Escribe aquí tu mensaje" required></textarea><br>
+            
+                <button id="btn-email" type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+    </footer>
+
+    
+
+    <script src="/fun/fun-hoteles.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('form').on('submit', function(event) {
+                event.preventDefault(); 
+        
+                var formData = $(this).serialize(); 
+        
+                $.ajax({
+                    type: 'POST',
+                    url: '/send-email',
+                    data: formData,
+                    success: function(response) {
+
+                        $('form').append('<p class="message-response" style="font-family: Outfit, sans-serif; margin-top: 20px; font-size: 1.8rem; color: #f8f8f8;">Tu correo ha sido enviado con éxito</p>');
+                        $('form')[0].reset();
+                        $('#btn-email').css('display', 'none');
+                        $('#correo').css('display', 'none');
+                        $('#nombre').css('display', 'none');
+                        $('#asunto').css('display', 'none');
+                        $('#mensaje').css('display', 'none');
+                        $('form').append('<button id="btn-another-email">Enviar otro correo</button>');
+                    },
+                    error: function(err) {
+                        // agrega un mensaje de error debajo del formulario
+                        $('form').append('<p class=".message-err" style="font-family: Outfit, sans-serif; margin-top: 20px; font-size: 1.8rem; color: red;">Hubo un error al enviar el correo</p>');
+                    }
+                });
+            });
+
+            $(document).on('click', '#btn-another-email', function() {
+                // muestra los elementos del formulario
+                $('.message-response').remove();
+                $('.message-err').remove();
+                $('#btn-email').css('display', 'block');
+                $('#correo').css('display', 'block');
+                $('#nombre').css('display', 'block');
+                $('#asunto').css('display', 'block');
+                $('#mensaje').css('display', 'block');
+                // elimina el botón "Enviar otro correo"
+                $(this).remove();
+            });
+        });
+    </script>
+</body>
+</html>

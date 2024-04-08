@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>Claudia & Nahum</title>
+    <link rel="stylesheet" href="css/principal-styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.2/awesomplete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+
+</head>
+<body>
+    <header class="navbar">
+        <nav class="desktop_menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="/programa-dia">Programa</a></li>
+                <li><a href="/#section-rsvp">RSVP</a></li>
+                <img src="/images/wedding.png" alt="logo de la boda" class="principal_logo_desktop">
+                <li><a href="/hoteles">Hoteles</a></li>
+                <li><a href="/dress-code">Dress Code</a></li>
+                <li><a href="/login">Invitación</a></li>
+            </ul>
+        </nav>
+        <nav class="phone_menu">
+            <div class="logo_phone">
+                <a href="/" class="logo-btn">
+                    <img src="/images/goldLogo.png" alt="" class="principal_logo">
+                </a>
+            </div>
+            <div class="menu_p">
+                <img src="/images/ListGold.png" alt="" class="menu_icon">
+            </div>
+            <ul class="nav_phone_menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="/programa-dia">Programa</a></li>
+                <li><a href="/#section-rsvp">RSVP</a></li>
+                <li><a href="/hoteles">Hoteles</a></li>
+                <li><a href="/dress-code">Dress Code</a></li>
+                <li><a href="/login">Invitación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="slider_album">
+        <div class="slider-container">
+            <div class="slide">
+                <img src="./images/NahunClau_Preboda-43.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/NahunClau_Preboda-19.webp" alt="">
+            </div>
+            <div class="slide">
+                <img src="./images/NahunClau_Preboda-25.webp" alt="">
+            </div>
+        </div>
+        <div class="text_couple">
+            <h1>CLAUDIA & NAHUM</h1>
+            <h4>19 · OCTUBRE · 2024</h4>
+        </div>
+    </section>
+    <section class="time_left">
+        <h2>Solo faltan</h2>
+        <div class="time">
+            <div class="days"></div>
+            <div class="hours"></div>
+            <div class="minutes"></div>
+            <div class="seconds"></div>
+        </div>
+    </section>
+    <section class="litte_story" id="story_main">
+        <div class="text_story">
+            <h2>Nuestra historia</h2>
+            <p>Hace 6 años que nos conocimos y desde ese momento algo dentro de nosotros se sintió especial, ha sido una aventura llena de grandes aprendizajes, crecimiento pero sobretodo mucho amor, "es como vivir en una luna de miel eterna" - Nahum</p>
+            <img src="./images/NahunClau_Preboda-28.webp" alt="">
+        </div>
+        <div class="image_story">
+            <div class="photo_walking">
+                <img src="./images/NahunClau_Preboda-15.jpg" alt="" class="no_phone_img">
+            </div>
+        </div>
+    </section>
+    <div class="ticker">
+        <div class="ticker-title">
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>  
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>            
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>
+            <span>CLAUDIA&nbsp&&nbspNAHUM&nbsp2024</span>
+        </div>
+    </div>
+    <div class="important_details" id="main_details">
+        <div class="text_details">
+            <h2>Acerca del día</h2>
+        </div>
+        <div class="img_details">
+            <img src="/images/NahunClau_Preboda-19.webp" alt="">
+        </div>
+    </div>
+    
+    <section class="main_info">
+        <div class="schedule info_wedding">
+            <div class="text_info">
+                <h2>Programa</h2>
+                <div class="info_img">
+                    <img src="/images/ScheduleIcon.png" alt="">
+                </div>  
+            </div>   
+             <p>Para asegurarnos de que no te pierdas ni un solo momento de nuestra celebración, hemos preparado un programa detallado para el día de la boda.</p>
+             <div class="anchor">
+                <a href="/programa">Ver itinerario</a>
+             </div>
+        </div>
+        <div class="location info_wedding">
+            <div class="text_info">
+                <h2>Ubicación</h2>
+                <div class="info_img">
+                    <img src="/images/locationIcon.png" alt="">
+                </div>  
+            </div> 
+             <p>La dirección exacta donde se llevara a cabo el evento es <b> Av. Contreras 300, San Jerónimo Lídice, 10200 México, CDMX.</b> Dando click en el botón encontrarás la ubicación exacta del lugar de la boda.</p>
+             <div class="anchor">
+                <a href="https://maps.app.goo.gl/sQ6mAQqUFA1TsHoc6">Ver ubicación</a>
+             </div>
+        </div>
+        <div class="dress_code info_wedding">
+            <div class="text_info">
+                <h2>Dress Code</h2>
+                <div class="info_img">
+                    <img src="/images/dressIcon.png" alt="">
+                </div>  
+            </div> 
+             <p>Aquí te ofrecemos recomendaciones de vestimenta para nuestra boda. Esperamos que estas sugerencias hagan que tu elección sea más sencilla y te permitan disfrutar al máximo de nuestro día especial.</p>
+             <div class="anchor">
+                <a href="/dress-code">Ver recomendiaciones</a>
+             </div>
+        </div>
+        <div class="hotels info_wedding">
+            <div class="text_info">
+                <h2>Hoteles</h2>
+                <div class="info_img">
+                    <img src="/images/hotelcon.png" alt="">
+                </div>  
+            </div> 
+             <p>Hemos seleccionado una lista de hoteles cercanos que ofrecen una experiencia de hospedaje. Te recomendamos reservar con anticipación para asegurar tu alojamiento durante este fin de semana especial.</p>
+             <div class="anchor">
+                <a href="/hoteles">Ver hoteles</a>
+             </div>
+        </div>
+        <div class="rsvp_guest info_wedding">
+            <div class="text_info">
+                <h2>Invitación</h2>
+                <div class="info_img">
+                    <img src="/images/rsvpIcon.png" alt="">
+                </div> 
+            </div> 
+            <p>Por favor confirma tu asistencia antes en la siguiente sección y para ver tu invitacion dale click en el siguiente botón. ¡Estamos emocionados de compartir este día tan especial contigo!
+            </p>
+            <div class="anchor">
+                <a href="/login">Hacer reservación</a>
+            </div>           
+        </div>
+        <div class="gifts info_wedding">
+            <div class="text_info">
+                <h2>Mesa de Regalos</h2>
+                <div class="info_img">
+                    <img src="/images/giftIcon.png" alt="">
+                </div>  
+            </div> 
+             <p>Creamos una mesa de regalos donde podrán encontrar sugerencias desde artículos prácticos hasta experiencias inolvidables, cualquier gesto será apreciado y recordado con cariño, aunque el mejor regalo será tu presencia.</p>
+             <div class="anchor">
+                <a href="/">Ver opciones</a>
+             </div>
+        </div>
+        
+    </section>
+
+    <section class="enter-rvsp" id="section-rsvp">
+        <div class="img-rsvp">
+            <img src="/images/rsvp-imgs.png" alt="foto de boda">
+        </div>
+        <div class="info-enter-rsvp">
+            <h2>Reserva tu lugar</h2>
+            <p>Queremos que seas parte de este momento tan importante para nosotros, confirma tu asistencia</p>
+            <div class="form-home">
+                <form method="POST" id="rsvp-method">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Selecciona tu nombre" autocomplete="on" required>
+                    
+                    <label for="numInvitados"></label>
+                    <input type="number" id="numInvitados" name="numInvitados" placeholder="¿Cuántos asistirán?" min="0" required>
+                    
+                    <label for="asistencia"></label>
+                    <select name="asistencia" id="asistencia" required>
+                        <option value="" disabled selected>Selecciona una opción</option>
+                        <option value="si">Sí, asistiré</option>
+                        <option value="no">No, no podré asistir</option>
+                    </select><br>
+                    
+                    <button type="button" id="btn-submit">Confirmar asistencia</button>
+                </form>
+                <div id="confirmacion" style="display: none;">
+                    <p>Gracias por confirmar tu asistencia</p>
+                    <button id="otraConfirmacion">Hacer otra confirmación</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="frequent-qa">
+        <h2>Preguntas frecuentes</h2>
+        <div class="questions">
+            <div class="qa">
+                <h3 class="question-title">
+                    ¿Cuál es el tipo de vestimenta para el día de la boda?
+                </h3>
+                <p class="question-answer">
+                    El tipo de vestimenta para el día de la boda es formal de etiqueta, puedes encontrar más detalles en el siguiente enlace <a href="/dress-code">Dress Code</a>
+                </p>
+            </div>
+            <div class="qa">
+                <h3 class="question-title">
+                    ¿Cuál es el horario de la ceremonia?
+                </h3>
+                <p class="question-answer">La ceremonia de la boda comenzará a las 2:00 p. m. Te recomendamos llegar al menos 30 minutos antes para asegurarte de tener tiempo suficiente para encontrar estacionamiento y tomar asiento, ecuentra más detalles en el siguiente enlace <a href="/programa">Programa</a></p>
+            </div>
+            
+            <div class="qa">
+                <h3 class="question-title">
+                    ¿Puedo traer a mis hijos a la boda?
+                </h3>
+                <p class="question-answer">Entendemos que puede ser difícil encontrar cuidado de niños durante un evento como una boda y queremos que disfrutes al máximo este día tan especial para nosotros por lo que no habrá niños presentes</p>
+            </div>
+            
+            <div class="qa">
+                <h3 class="question-title">
+                    ¿Dónde puedo estacionar durante la boda?
+                </h3>
+                <p class="question-answer">En el hotel donde se llevará a cabo el evento habrá valet parking y podrán estacionar tu coche para que no tengas que preocuparte por eso, te recomendamos llegar ocn anticipación para evitar cualquier imprevisto</p>
+            </div>
+            <div class="qa">
+                <h3 class="question-title">
+                    ¿Hay restricciones dietéticas que deba tener en cuenta?
+                </h3>
+                <p class="question-answer">Intentamos acomodar todas las restricciones dietéticas de nuestros invitados. Si tienes alguna alergia alimentaria o requerimiento especial, por favor háznoslo saber enviándonos un correo electronico a boda@claudiaynahum.com o en la parte final de esta web encontrarás un formulario para enviarnos un mensaje</p>
+            </div>
+        </div>
+    </section>
+    <footer class="final-section">
+        <div class="footer-info">
+            <h2 class="footer-text-web">Si tienes alguna duda, <br>no dudes en contactarnos.</h2>
+            <h1>CLAUDIA & NAHUM</h1>
+            <h3>19 · OCTUBRE · 2024</h3>
+        </div>
+        <div class="email-contact">
+            <h2 class="footer-text-phone">Si tienes alguna duda, <br>no dudes en contactarnos.</h2>
+            <form action="/send-email" method="POST" id="email-form">
+                <label for="nombre-email">Nombre</label>
+                <input type="text" id="nombre-email" name="nombre" placeholder="Tu nombre"><br>
+            
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="tucorreo@gmail.com" required><br>
+            
+                <label for="asunto">Asunto</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Asunto del correo" required><br>
+            
+                <label for="mensaje">Mensaje</label><br>
+                <textarea id="mensaje" name="mensaje"  placeholder="Escribe aquí tu mensaje" required></textarea><br>
+            
+                <button id="btn-email" type="submit">Enviar mensaje</button>
+               
+            </form>
+        </div>
+    </footer>
+
+
+
+
+    
+    <script src="/fun/fun-principal.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('form[action="/send-email"]').on('submit', function(event) {
+
+                event.preventDefault(); 
+        
+                var formData = $(this).serialize(); 
+        
+                $.ajax({
+                    type: 'POST',
+                    url: '/send-email',
+                    data: formData,
+                    success: function(response) {
+
+                        $('form').append('<p class="message-response" style="font-family: Outfit, sans-serif; margin-top: 20px; font-size: 1.8rem; color: #f8f8f8;">Tu correo ha sido enviado con éxito</p>');
+                        $('form')[0].reset();
+                        $('#btn-email').css('display', 'none');
+                        $('#correo').css('display', 'none');
+                        $('#nombre-email').css('display', 'none');
+                        $('#asunto').css('display', 'none');
+                        $('#mensaje').css('display', 'none');
+                        $('#email-form').append('<button id="btn-another-email">Enviar otro correo</button>');
+                    },
+                    error: function(err) {
+                        // agrega un mensaje de error debajo del formulario
+                        $('form').append('<p class=".message-err" style="font-family: Outfit, sans-serif; margin-top: 20px; font-size: 1.8rem; color: red;">Hubo un error al enviar el correo</p>');
+                    }
+                });
+            });
+
+            $(document).on('click', '#btn-another-email', function() {
+                // Muestra los elementos del formulario
+                $('.message-response').remove();
+                $('.message-err').remove();
+                $('#btn-email').css('display', 'block');
+                $('#correo').css('display', 'block');
+                $('#nombre-email').css('display', 'block');
+                $('#asunto').css('display', 'block');
+                $('#mensaje').css('display', 'block');
+                
+                // Elimina el botón "Enviar otro correo"
+                $(this).remove();
+                
+                // Restablece el formulario a su estado original
+                $('form[action="/send-email"]')[0].reset();
+            });
+        });
+    </script>
+    <script>
+        // Obtener elementos de entrada
+        const nombreInput = document.getElementById('nombre');
+        const numInvitadosInput = document.getElementById('numInvitados');
+        const rsvpForm = document.getElementById('rsvp-method');
+        const responseRsvp = document.getElementById('confirmacion')
+        const otherButton = document.getElementById('otraConfirmacion');
+    
+        // Obtener opciones de nombre y filtrar las que no son nulas
+        const opcionesNombre = JSON.parse('<%- JSON.stringify(opcionesNombre) %>');
+        const opcionesNombreLimpio = opcionesNombre.filter(nombre => nombre !== null);
+    
+        // Inicializar Awesomplete en el campo de nombre
+        const awesomplete = new Awesomplete(nombreInput, {
+            list: opcionesNombreLimpio,
+            minChars: 3,
+            replace: function(text) {
+                nombreInput.value = text.value;
+                nombreInput.dispatchEvent(new Event('input'));
+            }
+        });
+    
+        // Función para obtener el número máximo de invitados desde la base de datos
+        async function obtenerNumeroMaximoInvitados(nombre) {
+            try {
+                const response = await fetch(`/getInvitados/${nombre}`);
+                const data = await response.json();
+                if (data && data.numInvitados) {
+                    numInvitadosInput.value = data.numInvitados;
+                    return data.numInvitados;
+                }
+            } catch (error) {
+                console.error('Error al obtener el número máximo de invitados:', error);
+            }
+            return 0; // Valor predeterminado si hay un error o no se encuentra el número máximo
+        }
+    
+        // Agregar evento de cambio al campo de nombre para actualizar el campo de invitados y el número máximo
+        // Agregar evento de cambio al campo de nombre para actualizar el campo de invitados y el número máximo
+        nombreInput.addEventListener('input', async () => {
+            const nombre = nombreInput.value.trim();
+            if (nombre !== '') {
+                try {
+                    // Obtener el número máximo de invitados desde la base de datos
+                    const numMaximoInvitados = await obtenerNumeroMaximoInvitados(nombre);
+                    // Actualizar el valor de data-max-invites para permitir disminuir pero no aumentar
+                    numInvitadosInput.setAttribute('data-max-invites', numMaximoInvitados);
+                    // Establecer el valor actual de invitados al máximo permitido
+                    numInvitadosInput.value = Math.min(parseInt(numInvitadosInput.value), numMaximoInvitados) || '';
+                } catch (error) {
+                    console.error('Error al obtener el número de invitados:', error);
+                }
+            } else {
+                numInvitadosInput.value = ''; 
+                numInvitadosInput.removeAttribute('data-max-invites'); // Eliminar el atributo si no hay nombre seleccionado
+            }
+        });
+
+    
+        // Función para validar el valor de numInvitados y asegurarse de que no exceda el valor máximo permitido
+        function validarNumeroInvitados() {
+            const numInvitados = parseInt(numInvitadosInput.value);
+            const maxInvites = parseInt(numInvitadosInput.getAttribute('data-max-invites'));
+            if (!isNaN(numInvitados) && !isNaN(maxInvites)) {
+                numInvitadosInput.value = Math.min(numInvitados, maxInvites);
+            }
+        }
+    
+        // Agregar evento de cambio al campo de invitados para validar el valor
+        numInvitadosInput.addEventListener('change', validarNumeroInvitados);
+        // Agregar evento de entrada al campo de invitados para validar el valor en tiempo real
+        numInvitadosInput.addEventListener('input', validarNumeroInvitados);
+    
+        document.getElementById('btn-submit').addEventListener('click', async () => {
+            event.preventDefault();
+            // Obtener valores del formulario
+            const nombre = document.getElementById('nombre').value.trim();
+            const numInvitados = document.getElementById('numInvitados').value.trim();
+            const asistencia = document.getElementById('asistencia').value.trim();
+    
+            // Validar los datos del formulario
+            if (nombre === '' || numInvitados === '' || asistencia === '') {
+                console.log('Por favor, complete todos los campos.');
+                return;
+            }
+    
+            try {
+                // Realizar la solicitud para actualizar los invitados
+                const response = await fetch(`/actualizarInvitados/${nombre}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ numInvitados, asistencia })
+                });
+                console.log(response)
+                const data = await response.json();
+                console.log(data.mensaje); // Mensaje de confirmación o error
+
+            } catch (error) {
+                console.error('Error al actualizar el número de invitados:', error);
+            }
+            rsvpForm.style.display = 'none';
+            responseRsvp.style.display = 'flex';
+        });
+
+        otherButton.addEventListener('click', () => {
+            rsvpForm.reset();
+            rsvpForm.style.display = 'flex';
+            responseRsvp.style.display = 'none';
+        });
+    </script>
+    
+</body>
+</html>

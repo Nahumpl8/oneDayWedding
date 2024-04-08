@@ -1,0 +1,274 @@
+@font-face {
+    font-family: titlesWedding;
+    src: url(../fonts/Vogue.ttf);
+
+}
+@font-face {
+    font-family: Outfit;
+    src: url(../fonts/Outfit.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway.ttf);
+}
+@font-face {
+    font-family: Autography;
+    src: url(../fonts/Autography.otf);
+}
+@font-face {
+    font-family: Signature;
+    src: url(../fonts/Signature.ttf);
+}
+@font-face {
+    font-family: Vogue;
+    src: url(../fonts/Vogue.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    background-color: #f5f5f5;
+}
+.principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100vh;
+}
+
+.photo img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.access_page{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.logo_cn{
+    display: none;
+}
+.logo_cn_desktop{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.logo_cn_desktop a{
+    width: 30%;
+}
+.logo_cn_desktop img{
+    width: 100%;
+
+}    
+.form_access{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5%;
+}
+.form_access h2{
+    width: 70%;
+    font-size: 1.8rem;
+    font-family: Georgia,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    color: rgb(96, 118, 96);
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.form_access form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20vh;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+}
+.title h1{
+    margin-top: 20px;
+    font-family: Signature, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: #c0a080;
+}
+.title h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    color: #c0a080;
+}
+
+#nombre,
+#numInvitados {
+    border: none;
+    border-bottom: 1px solid #c0a080;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: rgb(96, 118, 96);
+    font-size: 1.8rem;
+    transition: border-bottom 0.3s, color 0.3s; 
+    width: 270px;
+    margin-top: 10px;
+}
+
+#nombre:focus,
+#numInvitados:focus {
+    border: none !important;
+    border-bottom: 2px solid #c0a080;
+    background-color: transparent; 
+    color: rgb(96, 118, 96); 
+}
+#nombre:active,
+#numInvitados:active {
+    border: none !important;
+    background-color: transparent; 
+    color: rgb(96, 118, 96); 
+}
+
+
+#nombre::-webkit-input-placeholder,
+#numInvitados::-webkit-input-placeholder {
+    border: none;
+    color: rgba(96, 118, 96, 0.4);
+}
+
+
+button{
+    margin-top: 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #c0a080;
+    color: #f5f5f5;
+    padding: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+button:hover{
+    transform: scale(1.1);
+}
+
+
+.awesomplete ul{
+    position: absolute;
+    background-color: #f5f5f5cd;
+    border: 2px solid #c0a080;
+    width: 270px;
+    border-radius: 0 0 5px 5px;
+    font-family: Georgia, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.awesomplete ul li{
+    list-style: none;
+    padding: 10px;
+    color: rgb(96, 118, 96);
+    cursor: pointer;
+    border-bottom: 1px solid #c0a080;
+    font-size: 1.6rem;
+    text-align: center;
+    transition: .8s;
+    width: 100%;
+}
+.awesomplete ul li:hover{
+    background-color: #c0a080;
+    color: #f5f5f5;
+}
+mark{
+    background-color:transparent !important;
+    padding:0;
+    margin:0;
+}
+.error-message{
+    color: rgb(125, 12, 12);
+}
+
+
+@media screen and (max-width: 720px) {
+    .principal{
+        display: grid;
+        grid-template-columns: 1fr;
+        height: 100vh;
+    }
+    .photo_web{
+        position: relative;
+    }
+    .photo_web img{
+        filter: brightness(.5);
+        object-position: bottom;
+    }
+    .logo_cn_desktop{
+        display: none;
+    }
+    .logo_cn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        z-index: 2;
+    }
+    .logo_cn a{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo_cn img{
+        width: 100%;
+    }
+    .title{
+        position: absolute;
+        top: 18%;
+    }
+    .title h1{
+        font-size: 3.6rem;
+        color: #f5f5f5;
+    }
+    .title h2{
+        font-size: 2rem;
+        margin-top: 15px;
+        color: #f5f5f5;
+        font-weight: 800;
+    }
+    
+    .title h1, h2{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    .form_access{
+        position: absolute;
+        background-color: #f5f5f5bf;
+        bottom: 40%;  
+        border-radius: 5px;  
+        width: 300px;  
+        bottom: 22%;
+    }
+    .form_access h2{
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: rgb(96, 118, 96);
+        text-shadow: none;
+        margin-bottom: 20px;
+    }
+    .awesomplete ul{
+        width: 270px;
+    }
+}

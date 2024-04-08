@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <title>Claudia & Nahum</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/awesomplete/1.1.2/awesomplete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js"></script>
+    <link rel="stylesheet" href="/css/login-styles.css">
+</head>
+<body>
+    <section class="principal">
+        <div class="photo_web">
+          <div class="photo">
+            <a href="/">
+                <img src="/images/NahunClau_Preboda-19.webp" alt="">
+            </a>
+          </div>
+        </div>
+        <div class="access_page">
+            <div class="title">
+                <div class="logo_cn_desktop">
+                    <a href="/">
+                        <img src="/images/goldLogo.png" alt="">
+                    </a>
+                </div> 
+                <h1>Claudia & Nahum</h1>
+                <h2>19 · Octubre · 2024</h2>
+            </div>
+            <div class="form_access">
+                    <h2>Ingresa con tu nombre para ver tu invitación</h2>
+                    <form action="/login" method="post">
+                    <label for="nombre"></label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Selecciona tu nombre" autocomplete="on" required>
+
+                    <label for="numInvitados"></label>
+                    <input type="number" id="numInvitados" name="numInvitados" placeholder="Número de pases" readonly>
+
+                    <button type="submit">Ver invitación</button>
+                </form>
+
+            </div>
+        </div>
+        
+    </section>
+    <div class="logo_cn">
+        <a href="/">
+            <img src="/images/wedding.png" alt="">
+        </a>
+    </div> 
+
+    
+    <script>
+        const nombreInput = document.getElementById('nombre');
+        const numInvitadosInput = document.getElementById('numInvitados');
+        const opcionesNombre = JSON.parse('<%- JSON.stringify(opcionesNombre) %>');
+        const opcionesNombreLimpio = opcionesNombre.filter(nombre => nombre !== null);
+
+
+        const awesomplete = new Awesomplete(nombreInput, {
+            list: opcionesNombreLimpio,
+            minChars: 3,
+            replace: function(text) {
+                nombreInput.value = text.value;
+                nombreInput.dispatchEvent(new Event('input'));
+            }
+        });
+
+        nombreInput.addEventListener('input', async () => {
+            const nombre = nombreInput.value;
+            if (nombre.trim() !== '') {
+                try {
+                    const response = await fetch(`/getInvitados/${nombre}`);
+                    const data = await response.json();
+                    
+                    if (data && data.numInvitados) {
+                        numInvitadosInput.value = data.numInvitados;
+                    } else {
+                        numInvitadosInput.value = ''; 
+                    }
+                } catch (error) {
+                    console.error('Error al obtener el número de invitados:', error);
+                }
+            } else {
+                numInvitadosInput.value = ''; 
+            }
+        });
+    </script>
+
+</body>
+</html>
