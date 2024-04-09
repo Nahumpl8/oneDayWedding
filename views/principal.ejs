@@ -203,14 +203,18 @@
         </div>
         <div class="info-enter-rsvp">
             <h2>Reserva tu lugar</h2>
-            <p>Queremos que seas parte de este momento tan importante para nosotros, confirma tu asistencia</p>
+            <p>Queremos que seas parte de este momento tan importante para nosotros, llena este formulario y confirma tu asistencia</p>
             <div class="form-home">
                 <form method="POST" id="rsvp-method">
                     <label for="nombre"></label>
                     <input type="text" id="nombre" name="nombre" placeholder="Selecciona tu nombre" autocomplete="on" required>
                     
-                    <label for="numInvitados"></label>
-                    <input type="number" id="numInvitados" name="numInvitados" placeholder="¿Cuántos asistirán?" min="0" required>
+                    <div class="modificable">
+                        <span class="less" style="margin-bottom: 5px;">-</span>
+                        <label for="numInvitados"></label>
+                        <input type="number" id="numInvitados" name="numInvitados" placeholder="¿Cuántos asistirán?" min="0" required>
+                        <span class="more">+</span>
+                    </div>
                     
                     <label for="asistencia"></label>
                     <select name="asistencia" id="asistencia" required>
@@ -354,6 +358,10 @@
         const rsvpForm = document.getElementById('rsvp-method');
         const responseRsvp = document.getElementById('confirmacion')
         const otherButton = document.getElementById('otraConfirmacion');
+        const lessBtn = document.querySelector('.less');
+        const moreBtn = document.querySelector('.more');
+        const numbtns = document.querySelectorAll('.modificable span');
+
     
         // Obtener opciones de nombre y filtrar las que no son nulas
         const opcionesNombre = JSON.parse('<%- JSON.stringify(opcionesNombre) %>');
@@ -403,6 +411,17 @@
                 numInvitadosInput.value = ''; 
                 numInvitadosInput.removeAttribute('data-max-invites'); // Eliminar el atributo si no hay nombre seleccionado
             }
+        });
+
+        lessBtn.addEventListener('click', () => {
+            numInvitadosInput.stepDown();
+        });
+
+        moreBtn.addEventListener('click', () => {
+            if(numInvitadosInput.value < numInvitadosInput.getAttribute('data-max-invites')) {
+                numInvitadosInput.stepUp();
+            } 
+
         });
 
     

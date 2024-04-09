@@ -570,6 +570,27 @@ a{
     border: none;
     color: rgba(96, 118, 96, 0.4);
 }
+.modificable{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.modificable span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    color: #c0a080;
+    font-family: Outfit, sans-serif;
+    font-weight: 800;
+    padding: 2px 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    user-select: none; 
+    
+}
 
 #asistencia{
     border: none;
