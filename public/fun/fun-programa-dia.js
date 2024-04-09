@@ -60,7 +60,7 @@ document.addEventListener('scroll', () => {
     
 })
 
-for (let i = 1; i <= 2; i++) {
+for (let i = 1; i <= 1; i++) {
     const btnShowInfoDay = document.querySelector(`.btn-info-${i}`);
     const infoDay = document.querySelector(`.info-of-day-${i}`);
     const img = document.querySelector(`.img-${i}`);
