@@ -584,8 +584,8 @@ input, textarea{
 
     /*Slider info*/
     .introduction-program-content{
-        bottom: 15%;
-        left: 2%;
+        bottom: 10px;
+        left: 10px;
         text-align: start;
         color: #f8f8f8;
     }
