@@ -575,6 +575,9 @@ input, textarea{
     .nav_phone_menu a:nth-child(6) {
         animation-delay: 2.8s;
     }
+    .nav_phone_menu a:nth-child(7) {
+        animation-delay: 3.2s;
+    }
     .navbar.show{
         background-color: #f8f8f8;
         border-radius: 0;
@@ -624,7 +627,7 @@ input, textarea{
 
      /*Slider info*/
      .introduction-program-content{
-        bottom: 15%;
+        bottom: 8%;
         left: 2%;
         text-align: start;
         color: #f8f8f8;
