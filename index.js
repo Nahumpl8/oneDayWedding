@@ -27,6 +27,7 @@ db.once('open', () => {
 
 const Invitado = mongoose.model('Invitado', {
   nombre: String,
+  nombreInvitacion: String,
   contraseña: String,
   numeroInvitados: Number,
   weekend: Number,
