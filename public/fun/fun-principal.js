@@ -126,7 +126,7 @@ const logoWDesktop = document.querySelector('.principal_logo_desktop')
 const phoneBar = document.querySelector('.phone_menu')
 
 document.addEventListener('scroll', () => {
-    if(window.scrollY > 600){
+    if(window.scrollY > 200){
         phoneBar.classList.add('phone_scroll')
         menuDesktop.classList.add('desktop_scroll')
         logoWDesktop.src = '/images/goldLogo.png';
