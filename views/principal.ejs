@@ -447,7 +447,7 @@
             const asistencia = document.getElementById('asistencia').value.trim();
     
             // Validar los datos del formulario
-            if (nombre === '' || numInvitados === '' || asistencia === '') {
+            if (nombre === '' || numInvitados === '' || asistencia === '' || numInvitados === 0 || numInvitados === '0') {
                 console.log('Por favor, complete todos los campos.');
                 return;
             }
