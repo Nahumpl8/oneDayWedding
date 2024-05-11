@@ -217,7 +217,7 @@ button:hover{
     list-style: none;
     text-align: center;
     padding: 10px;
-    border: 1px solid #c0a080;
+    border: px solid #c0a080;
     color: rgb(96, 118, 96);
     cursor: pointer;
 }

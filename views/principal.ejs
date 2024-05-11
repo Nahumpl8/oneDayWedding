@@ -87,8 +87,7 @@
                 imaginé toparme al amor de mi vida a los 20 años y si me preguntan como supe que Nahum era el amor de mi
                 vida, fue porque era la representación perfecta de lo que algún día le pedí a Dios para mí.
                 Somos sumamente afortunados por habernos encontrado en esta y ojalá que en todas las vidas posibles."
-                <span style="color: #c0a080; font-weight: 600;">- Claudia</span>
-            </p>
+                <span style="color: #c0a080; font-weight: 600;">- Claudia</span></p>
             <p style="color: #607660; font-weight: 200;">"Hace 6 años que nos conocimos y desde ese momento algo dentro
                 de nosotros se sintió especial, ha sido una aventura llena de grandes aprendizajes, crecimiento pero
                 sobretodo mucho amor, es como vivir en una luna de miel eterna" <span
@@ -289,7 +288,7 @@
                     ¿Dónde puedo estacionar durante la boda?
                 </h3>
                 <p class="question-answer">En el hotel donde se llevará a cabo el evento habrá valet parking y podrán
-                    estacionar tu coche para que no tengas que preocuparte por eso, te recomendamos llegar ocn
+                    estacionar tu coche para que no tengas que preocuparte por eso, te recomendamos llegar con
                     anticipación para evitar cualquier imprevisto</p>
             </div>
             <div class="qa">
@@ -407,13 +406,10 @@
         const opcionesConAcentos = [...opcionesNombreLimpio];
 
 
-
-
-
         // Crear el objeto Awesomplete con la lista de opciones normalizadas
         const awesomplete = new Awesomplete(nombreInput, {
             list: opcionesConAcentos.map(opcion => quitarAcentos(opcion)),
-            minChars: 10,
+            minChars: 9,
             replace: function (text) {
                 // Obtener el nombre con acentos correspondiente al texto seleccionado
                 const nombreSeleccionadoSinAcentos = text.value;
