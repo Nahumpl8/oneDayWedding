@@ -87,7 +87,8 @@
                 imaginé toparme al amor de mi vida a los 20 años y si me preguntan como supe que Nahum era el amor de mi
                 vida, fue porque era la representación perfecta de lo que algún día le pedí a Dios para mí.
                 Somos sumamente afortunados por habernos encontrado en esta y ojalá que en todas las vidas posibles."
-                <span style="color: #c0a080; font-weight: 600;">- Claudia</span></p>
+                <span style="color: #c0a080; font-weight: 600;">- Claudia</span>
+            </p>
             <p style="color: #607660; font-weight: 200;">"Hace 6 años que nos conocimos y desde ese momento algo dentro
                 de nosotros se sintió especial, ha sido una aventura llena de grandes aprendizajes, crecimiento pero
                 sobretodo mucho amor, es como vivir en una luna de miel eterna" <span
@@ -405,6 +406,10 @@
         // Lista de opciones original
         const opcionesConAcentos = [...opcionesNombreLimpio];
 
+
+
+
+
         // Crear el objeto Awesomplete con la lista de opciones normalizadas
         const awesomplete = new Awesomplete(nombreInput, {
             list: opcionesConAcentos.map(opcion => quitarAcentos(opcion)),
@@ -420,6 +425,9 @@
                 nombreInput.dispatchEvent(new Event('input'));
             }
         });
+
+
+
         // Función para obtener el número máximo de invitados desde la base de datos
         async function obtenerNumeroMaximoInvitados(nombre) {
             try {
