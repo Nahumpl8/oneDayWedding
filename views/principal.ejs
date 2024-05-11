@@ -370,7 +370,7 @@
         // Inicializar Awesomplete en el campo de nombre
         const awesomplete = new Awesomplete(nombreInput, {
             list: opcionesNombreLimpio,
-            minChars: 3,
+            minChars: 9,
             replace: function(text) {
                 nombreInput.value = text.value;
                 nombreInput.dispatchEvent(new Event('input'));
