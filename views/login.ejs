@@ -43,6 +43,7 @@
                     <label for="nombre"></label>
                     <input type="text" id="nombre" name="nombre" placeholder="Selecciona tu nombre" autocomplete="on"
                         required>
+                        <ul class="awesomplete options"></ul>
 
                     <label for="numInvitados"></label>
                     <input type="number" id="numInvitados" name="numInvitados" placeholder="Número de pases" readonly>
@@ -75,29 +76,76 @@
         // Lista de opciones original
         const opcionesConAcentos = [...opcionesNombreLimpio];
 
-        // Crear el objeto Awesomplete con la lista de opciones normalizadas
-        const awesomplete = new Awesomplete(nombreInput, {
-            list: opcionesConAcentos.map(opcion => quitarAcentos(opcion)),
-            minChars: 10,
-            replace: function (text) {
-                // Obtener el nombre con acentos correspondiente al texto seleccionado
-                const nombreSeleccionadoSinAcentos = text.value;
-                const indice = opcionesConAcentos.findIndex(opcion => quitarAcentos(opcion) === nombreSeleccionadoSinAcentos);
-                const nombreSeleccionadoConAcentos = opcionesConAcentos[indice];
 
-                // Asignar el nombre con acentos al input y despachar el evento 'input'
-                nombreInput.value = nombreSeleccionadoConAcentos;
-                nombreInput.dispatchEvent(new Event('input'));
-            }
-        });
+        
 
-        nombreInput.addEventListener('input', async () => {
+       nombreInput.addEventListener('input', () => {
+        
+        const nombre = nombreInput.value;
+        const nombreEspecial = 'Erick roa'
+        const nombreEspecial2 = 'Hugo Luna'
+        const nombreEspecial3 = 'Diego Gil'
+        const nombreEspecial4 = 'Hugo Roy'
+        if ((nombre != '' && nombre.length > 10) ){
+            const opcionesFiltradas = opcionesConAcentos.filter(opcion => quitarAcentos(opcion).toLowerCase().includes(nombre.toLowerCase()));
+            
+
+            //mostrar opciones filtradas como sugerencias como ul y li con la clase .awesomplete
+
+            const ul = document.querySelector('.awesomplete.options');
+            ul.innerHTML = '';
+
+            
+            opcionesFiltradas.forEach(opcion => {
+                const li = document.createElement('li');
+                li.textContent = opcion;
+                ul.appendChild(li);
+            });
+
+            ul.addEventListener('click', (e) => {
+                if (e.target.tagName === 'LI') {
+                    nombreInput.value = e.target.textContent;
+                    ul.innerHTML = '';
+                    findNumberGuests();
+                }
+            });
+
+        } else if ((nombre.includes(nombreEspecial.toLowerCase()) || nombre.includes(nombreEspecial2.toLowerCase()) || nombre.includes(nombreEspecial3.toLowerCase()) || nombre.includes(nombreEspecial4.toLowerCase())) && nombre.length > 6){
+            const opcionesFiltradas = opcionesConAcentos.filter(opcion => quitarAcentos(opcion).toLowerCase().includes(nombre.toLowerCase()));
+            
+
+            const ul = document.querySelector('.awesomplete.options');
+            ul.innerHTML = '';
+
+            
+            opcionesFiltradas.forEach(opcion => {
+                const li = document.createElement('li');
+                li.textContent = opcion;
+                ul.appendChild(li);
+            });
+
+            //al hacer click en una de las opciones, se debe rellenar el input con el valor seleccionado
+            ul.addEventListener('click', (e) => {
+                if (e.target.tagName === 'LI') {
+                    nombreInput.value = e.target.textContent;
+                    ul.innerHTML = '';
+                    findNumberGuests();
+                }
+            });
+
+            
+            
+
+        }
+       })
+
+       
+       const findNumberGuests = async () => {
             const nombre = nombreInput.value;
             if (nombre.trim() !== '') {
                 try {
                     const response = await fetch(`/getInvitados/${nombre}`);
                     const data = await response.json();
-
                     if (data && data.numInvitados) {
                         numInvitadosInput.value = data.numInvitados;
                     } else {
@@ -109,7 +157,9 @@
             } else {
                 numInvitadosInput.value = '';
             }
-        });
+       }
+
+
     </script>
 
 </body>
