@@ -78,7 +78,7 @@
         // Crear el objeto Awesomplete con la lista de opciones normalizadas
         const awesomplete = new Awesomplete(nombreInput, {
             list: opcionesConAcentos.map(opcion => quitarAcentos(opcion)),
-            minChars: 3,
+            minChars: 10,
             replace: function (text) {
                 // Obtener el nombre con acentos correspondiente al texto seleccionado
                 const nombreSeleccionadoSinAcentos = text.value;
