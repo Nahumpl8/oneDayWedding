@@ -199,6 +199,9 @@ button:hover{
 }
 
 .awesomplete ul{
+    position: absolute;
+    top:0;
+    left: 0;
     list-style: none;
     padding: 10px;
     color: rgb(96, 118, 96);
@@ -214,7 +217,7 @@ button:hover{
     list-style: none;
     text-align: center;
     padding: 10px;
-    border: 2px solid #c0a080;
+    border: 1px solid #c0a080;
     color: rgb(96, 118, 96);
     cursor: pointer;
 }
