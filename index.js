@@ -5,7 +5,6 @@ const bodyParser = require('body-parser')
 const path = require('path');
 const MongoStore = require('connect-mongo');
 require('dotenv').config();
-const nodemailer = require('nodemailer');
 
 
 const app = express();
