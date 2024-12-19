@@ -86,40 +86,6 @@ app.put('/actualizarInvitados/:nombre', async (req, res) => {
 
 
 
-app.post('/send-email', async (req, res) => {
-  let { nombre, correo: email, asunto, mensaje } = req.body;
-
-  let transporter = nodemailer.createTransport({
-      service: 'gmail',
-      auth: {
-          user: process.env.EMAIL_USER,
-          pass: process.env.EMAIL_PASS,
-      }
-  });
-
-  let mailOptions = {
-      from: 'nahumpl95@gmail.com',
-      to: 'nahumpl95@gmail.com',
-      subject: `Mensaje de: ${nombre}`, 
-      text: `
-          Nombre: ${nombre}
-          Email: ${email}
-          Asunto: ${asunto} 
-          Mensaje: ${mensaje}
-      `
-  };
-
-  transporter.sendMail(mailOptions, (err, info) => {
-      if (err) {
-          console.error('Error al enviar el correo:', err);
-          res.status(500).send('Hubo un error al enviar el correo');
-      } else {
-          res.status(200).send('Correo enviado correctamente');
-      }
-  });
-});
-
-
 app.get('/invitacion', async (req, res) => {
   try {
       res.render('invitacion', { });
